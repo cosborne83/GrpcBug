@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package GrpcBug;
+
+service TestBug
+{
+	rpc Request(TestRequest) returns (TestResponse);
+}
+
+message TestRequest
+{
+}
+
+message TestResponse
+{
+}
